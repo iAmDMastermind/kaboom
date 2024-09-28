@@ -1,0 +1,125 @@
+
+@font-face{
+	font-family: 'bangers';
+	src: url('./assets/bangers.ttf');
+}
+
+/* General Styles */
+* {
+	text-decoration: none;
+}
+
+body {
+	background-color: #FDF0DF;
+	font-family: 'Bangers', 'bangers', monospace;
+	color: #669bbc;
+}
+
+/* Form Styles */
+.subscribe-form {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.subscribe-form input {
+	border: 1px solid #780000;
+	font-family: 'Bangers', sans-serif;
+	border-radius: 30px;
+	padding: 15px;
+	width: 90%;
+	color:#669bbc;
+	font-size: 18px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+
+.subscribe-form button {
+	background-color: #003049;
+	color: #FDF0D5;
+	border: none;
+	border-radius: 25px;
+	padding: 10px 20px;
+	font-family: 'Bangers', sans-serif;
+	font-size: 18px;
+	cursor: pointer;
+	margin-bottom:25px;
+}
+
+/* Layout Styles */
+main {
+	margin-top: 90px;
+}
+
+.menulink img{
+	width:30px;
+}
+
+/* Navigation Styles */
+nav {
+	background-color: #780000;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.menulink {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin-left: 170px;
+}
+
+.list {
+	display: none;
+	justify-content: right;
+	font-size: 30px;
+	float:right;
+	
+	position: fixed;
+	width: 90%;
+	height: 100vh;
+	background: #780000;
+	left: 0;
+	right: 0;
+	box-shadow:3px 5px 5px #003049;
+}
+
+nav img {
+	width: 80px;
+}
+
+/* Page Styles */
+.page2 {
+	background-color: #780000;
+	color: #669BBC;
+}
+
+/* List Styles */
+ul {
+	list-style-type: none;
+}
+
+main {
+	margin-bottom:300px;
+}
+
+footer{
+	background-color:#780000;
+	position:absolute;
+	left: 0;	
+	right:0;
+	padding:10px;
+	height: 200px;
+	color:#669bbc;
+}
+
+#x{
+	font-family:monospace;
+	font-weight:900;
+	color:black !important;
+	margin-bottom: 80px;
+}
