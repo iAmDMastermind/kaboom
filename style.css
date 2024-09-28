@@ -260,7 +260,29 @@ nav img {
 .content-box,
 .content-box-mcu img {
   margin-right: 15px;
+  object-fit: cover;
 }
+
+
+        .content-box::-webkit-scrollbar-track,.content-box-mcu::-webkit-scrollbar-track {
+            width: 10px; /* Width of the scrollbar */
+        }
+
+        .content-box::-webkit-scrollbar-track,.content-box-mcu::-webkit-scrollbar-track {
+            background: #f0f0f0; /* Background of the scrollbar track */
+            border-radius: 10px; /* Rounded track */
+        }
+
+        .content-box::-webkit-scrollbar-thumb, .content-box-mcu::-webkit-scrollbar-thumb  {
+            background: #888; /* Color of the scrollbar thumb */
+            border-radius: 10px; /* Rounded thumb */
+        }
+
+        .content-box::-webkit-scrollbar-thumb:hover,.content-box-mcu::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Color of the thumb on hover */
+        }
+
+
 
 article h3 {
   display: flex;
