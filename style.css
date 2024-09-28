@@ -242,7 +242,7 @@ nav img {
 /*COnTENTS*/
 .comic-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .content-box,
