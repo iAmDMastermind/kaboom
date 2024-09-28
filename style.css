@@ -131,8 +131,12 @@ nav {
   float: right;
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 30vh;
+  margin-top: 25%;
+  background-color: #669bbc;
   background: #780000;
+  box-shadow: 2px 3px 5px hsl(0, 9%, 20%);
+  border-radius: 30px;
   left: 0;
   right: 0;
   display: flex;
@@ -205,13 +209,13 @@ nav img {
 #x {
   font-family: monospace;
   font-weight: 900;
-  color: black !important;
+  color: #669bbc;
   margin-bottom: 80px;
   cursor: pointer;
 }
 
 #x1{
-
+  margin-right: 40px;
   cursor: pointer;
 }
 
@@ -290,15 +294,25 @@ article h3 {
   color: #c1121f;
 }
 
+#x2{
+  cursor: pointer;
+}
+
+#x2:hover{
+  color: #04263b;
+}
+
 #GOAT {
-  justify-content: right;
+  justify-content: center;
   list-style-type: none;
+  border-radius: 30px;
   font-size: 30px;
   float: right;
   position: fixed;
-  width: 80%;
-  height: 70vh;
-  background: #780000;
+  margin: auto;
+  width: 59%;
+  height: 20%;
+  background: #5c0202;
   left: 0;
   right: 0;
   display: flex;
@@ -367,11 +381,13 @@ article h3 {
   }
 
   .content-box {
-    margin-right: 20%;
+    margin-right: 30%;
+    padding-right: 120px;
   }
 
   .content-box-mcu {
-    margin-right: 20px;
+    margin-right: 40px;
+    padding-right: 120px;
   }
 
   .MCUblock {
@@ -490,7 +506,7 @@ article h3 {
   font-family: "bangers";
 }
 
-.search button {
+.search button, .search-button{
   padding: 10px 20px;
   border-radius: 25px;
   border: none;
@@ -502,7 +518,7 @@ article h3 {
 
 }
 
-.search button:hover {
+.search button:hover, .search-button:hover{
   background-color: #fdf0d5;
   color: #003049;
   border: 2px dotted #003049;
@@ -533,21 +549,18 @@ article h3 {
   font-size: 24px;
 }
 
-.sorryDiv {
-	background-color: #780000;
-	color: #fdf0df;
-	height: 250px;
-	box-shadow:4px 3px 5px black;
-	transition: 2s;
-	display: flex;
-	padding: 5px 4px;
-	text-align:center;
-	margin: auto;
-	max-width:400px;
-	font-size:1.6rem;
-	align-items:center;
-	justify-content:center;
-	backdrop-filter: blur(10px);
-	margin-top: 50%;
-	display:none;
+.noShow{
+  background-color: #5c0202;
+  padding: 30px;
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 50px;
+  top: 0;
+  text-align: center;
+  display: none;
+  border-radius: 60px;
+  transition: 1s;
+  box-shadow: 3px 3px 5px #00000073;
+  justify-content: center;
+  align-items: center;
 }

@@ -10,9 +10,9 @@ const GOAT = document.getElementById("GOAT");
 const x1 = document.getElementById("x1");
 const searchInput = document.querySelector(".search input");
 const searchResults = document.querySelectorAll(".content-box, .content-box-mcu");
-const sorryBox = document.querySelectorAll(".Ncontent-box, Ncontent-box-mcu");
-const sorryDiv = document.getElementById("sorryDiv");
-
+const searchbutton = document.getElementsByClassName(".search-button")
+const boxes = document.getElementById("content-card")
+const noShow = document.getElementById("noShow")
 
 // Create the search button
 const searchButton = document.createElement("button");
@@ -22,12 +22,7 @@ searchButton.classList.add("search-button");
 // Append the search button to the search div
 search.appendChild(searchButton);
 
-
 // Event listeners
-sorryBox.addEventListener("click", ()=>{
-	sorryDiv.style.display = "flex"
-})
-
 x.addEventListener("click", closeMenu);
 link1.addEventListener("click", showMenu);
 link0.addEventListener("click", showSearch);
@@ -35,6 +30,11 @@ x2.addEventListener("click", closeGOAT);
 theGOAT.addEventListener("click", showGOAT);
 x1.addEventListener("click", closeSearch);
 searchButton.addEventListener("click", filterContent);
+boxes.addEventListener("click", content)
+
+function content() {
+    noShow.style.display = "flex";
+}
 
 function showGOAT() {
     GOAT.style.visibility = "visible";
@@ -84,7 +84,6 @@ function filterContent() {
         if (text.includes(query)) {
             result.style.display = "flex";
             search.style.display = "none"
-            alert("Unfortunately, searching only currently works for titles")
             found = true;
         } else {
             result.style.display = "none";
@@ -94,4 +93,9 @@ function filterContent() {
     if (!found) {
         alert("No results found.");
     }
+}
+
+function jobX() {
+    noShow.style.display = "none"
+    boxes.style.cursor = "pointer"
 }

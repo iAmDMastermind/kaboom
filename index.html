@@ -2,6 +2,41 @@
 <html lang="en">
 
 <head>
+	
+		<meta name="description" content="Your one stop site for information and review for Marvel and DC movies 💥🧨">
+		<meta name="keywords" content="Marvel, DC, Movies, Avengers, X-Men, Deadpool, Marvel News, DC News, Comic Book news">
+		<meta name="author" content="Mololuwa Adenuga">
+	<!-- Google tag (gtag.js) -->
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FZ0H90SEER"></script>
+
+	<script>
+
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() { dataLayer.push(arguments); }
+
+		gtag('js', new Date());
+
+		gtag('config', 'G-FZ0H90SEER');
+
+	</script>
+	<!-- Google Tag Manager -->
+
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+		})(window, document, 'script', 'dataLayer', 'GTM-WDCHBC8R');</script>
+
+	<!-- End Google Tag Manager -->
 	<link rel="shortcut icon" href="./assets/icon.png" type="x-icon">
 
 	<meta charset="UTF-8">
@@ -9,13 +44,15 @@
 	<title>Kaboom</title>
 
 	<!-- Google Fonts Preconnect -->
-	<liink rel="preconnect" href="https://fonts.googleapis.com">
-		<liink rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<liink href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
-				<!-- CSS File -->
-				<link rel="stylesheet" href="style.css">
-				<!-- <link rel="icon" href="./assets/icon.png" type="image/png"> -->
+	<!-- CSS File -->
+	<link rel="stylesheet" href="style.css">
+	// <!-- <link rel="icon" href="./assets/icon.png" type="image/png"> -->
+
+
 </head>
 
 <body>
@@ -54,9 +91,11 @@
 			<a href="./contact.html">
 				<li>Contact</li<>
 			</a>
-			<a href="./index.html">
+
+			<a style="color: gold;" href="./index.html">
 				<li>Reviews</li<>
 			</a>
+
 			<a href="#">
 				<li class="searchForTab" id="theGOAT">Search me</li>
 			</a>
@@ -68,6 +107,7 @@
 	<div id="GOAT">
 		<p id="x2" onclick="me">X</p> <br>
 		<input placeholder="SEArCH" type="search">
+		<button class="search-button">Search</button>
 	</div>
 
 	<main>
@@ -139,29 +179,28 @@
 			<h2>Top stories comics:</h2>
 			<div class="comic-content">
 				<a href="./articles/superheroes-and-their-greatest-rivals.html">
-					<div class="content-box" id="content-card">
+					<div class="content-box" id="content-card-complete">
 						<img src="./assets/content/supes.jpeg" width="150px">
 						<p id="content-text">10 superheroes and their greatest rivals</p>
 					</div>
 				</a>
 
-				<a href="">
-					<div class="content-box" id="Ncontent-card">
-						<img src="./assets/content/supes.jpeg" width="150px">
-						<p id="content-text">10 superheroes and their greatest rivals</p>
-					</div>
-				</a>
-
-				<a href="">
-					<div class="content-box"id="Ncontent-card" >
+				<a href="#">
+					<div class="content-box" id="content-card" onclick="content()">
 						<img src="./assets/content/avengersVsXmen.jpeg" width="150px">
 						<p id="content-text">Who wins in a fight Avengers or XMen</p>
 					</div>
 				</a>
 
-				<a href="">
-					<div class="content-box" id="Ncontent-card">
-						<img src="./assets/content/Xmen.jpeg" width="150px" height="190px">
+				<a href="#">
+					<div class="content-box" id="content-card">
+
+						<a href="https://ibb.co/ss24cJ2"><img src="https://i.ibb.co/wpRq8rR/xmen.jpg" width="150px"
+								alt="xmen" border="0">
+
+						</a><br /><a href='https://imgbb.com/' onclick="content()"></a><br />
+
+
 						<p id="content-text">Who were the first XMen?</p>
 					</div>
 				</a>
@@ -170,35 +209,74 @@
 			<h3><a href="#">more...</a></h3>
 
 			<h2>Top stories: MCU</h2>
-
 			<div class="MCUblock">
-				<a href="">
-					<div class="content-box-mcu" id="Ncontent-card">
+				<a href="#">
+					<div class="content-box-mcu" id="content-card" onclick="content()">
 						<img src="./assets/content/FF.jpeg" width="180px">
 						<p id="content-text">Fantastic Four: First Steps, all we know</p>
 					</div>
+				</a>
+				<a href="#">
+					<div class="content-box-mcu" id="content-card">
+						<img src="articles/content/doomsday.jpg" width="200px" onclick="content()">
+						<p id="content-text"><span style="color: rgb(68, 60, 14);">Avengers 2026/2027 </span>everything we know: casts, production, and suggestion from fan</p>
+					</div>
+				</a>
 
-					<a href="">
-						<div class="content-box-mcu" id="Ncontent-card">
-							<img src="./assets/content/stan.jpg" width="180px">
+					<a href="#">
+						<div class="content-box-mcu" id="content-card">
+							<img src="./assets/content/stan.jpg" width="180px" onclick="content()">
 							<p id="content-text">Every Stan Lee mcu cameo</p>
 						</div>
-
-						<a href="">
-							<div class="content-box-mcu" id="Ncontent-card">
-								<img src="./assets/content/thunderbolts.jpeg" width="180px">
+					</a>
+						<a href="#">
+							<div class="content-box-mcu" id="content-card">
+								<img src="./assets/content/thunderbolts.jpeg" width="180px" onclick="content()">
 								<p id="content-text">what should you expect from thunderbolts</p>
 							</div>
+						</a>
+
+							<a href="#">
+								<div class="content-box-mcu" id="content-card" onclick="content()">
+									<img src="./articles/content/snap.jpg" width="180px">
+									<p id="content-text">Marvel Snap, tips and tricks 🎮</p>
+								</div>
+							</a>
+
+							<a href="#">
+								<div class="content-box-mcu" id="content-card" onclick="content()">
+									<img src="./articles/content/rivals.jpg" width="180px">
+									<p id="content-text">Marvel rivals, release date and trailer! 🎮</p>
+								</div>
+							</a>
+	
 			</div>
+			<h2>Top stories: DC Studios</h2>
+			<div class="card">
+				<div class="content-box-mcu" id="content-card">
+					<img src="./articles/content/dcu.png" width="100px">
+					<p id="content-text">DC movies announced since the release</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="noShow" id="noShow">
+			<p onclick="jobX()" style="text-align: center; 
+					  font-weight: bold;
+					  font-size: 20px; 
+					  font-family: arial;
+					  margin: 20px;
+					  color:blue;
+					  cursor: pointer;">
+					  X
+					  </p>
+			<p>Please bear with us this page is not available yet, our site will be launched fully on 31st of Sept. 2024 or before that, definately before😘😉</p>	
 		</div>
 
 
 	</article>
 
-<div class="sorryDiv" id="sorryDiv" >
-	<span>X</p>
-	<p class="sorry" >Sorry this article is not ready yet, <br>subscribe to us to know when it is ready yet🙁</p>
-</div>
+
 
 
 	<div class="footer">
