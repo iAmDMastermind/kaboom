@@ -627,7 +627,7 @@ article h3 {
 @media screen and (max-width:488px) {
   .card1 img,.card2 img, .card1, .card2{
     width: 300px;
-    margin-left:-60px;
+    margin-left: -60px;
   }
 
   .footer{
