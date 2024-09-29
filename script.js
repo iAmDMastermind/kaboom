@@ -13,6 +13,7 @@ const searchResults = document.querySelectorAll(".content-box, .content-box-mcu"
 const searchbutton = document.getElementsByClassName(".search-button")
 const boxes = document.getElementById("content-card")
 const noShow = document.getElementById("noShow")
+const card = document.getElementsByClassName("article")
 
 // Create the search button
 const searchButton = document.createElement("button");
@@ -31,6 +32,7 @@ theGOAT.addEventListener("click", showGOAT);
 x1.addEventListener("click", closeSearch);
 searchButton.addEventListener("click", filterContent);
 boxes.addEventListener("click", content)
+card.addEventListener("click", content)
 
 function content() {
     noShow.style.display = "flex";
@@ -97,5 +99,5 @@ function filterContent() {
 
 function jobX() {
     noShow.style.display = "none"
-    boxes.style.cursor = "pointer"
+    card.style.cursor = "pointer"
 }

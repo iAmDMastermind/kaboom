@@ -185,10 +185,11 @@ nav img {
 .footer {
   background-color: #780000;
   width: 100%;
+  min-width: 300px;
   padding: 10px;
   right: 0;
-  bottom: 0;
-  height: 200px;
+  bottom: -10px;
+  max-height: 200px;
   color: #669bbc;
   border-radius: 10px;
 }
@@ -242,7 +243,7 @@ nav img {
 /*COnTENTS*/
 .comic-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .content-box,
@@ -260,29 +261,7 @@ nav img {
 .content-box,
 .content-box-mcu img {
   margin-right: 15px;
-  object-fit: cover;
 }
-
-
-        .content-box::-webkit-scrollbar-track,.content-box-mcu::-webkit-scrollbar-track {
-            width: 10px; /* Width of the scrollbar */
-        }
-
-        .content-box::-webkit-scrollbar-track,.content-box-mcu::-webkit-scrollbar-track {
-            background: #f0f0f0; /* Background of the scrollbar track */
-            border-radius: 10px; /* Rounded track */
-        }
-
-        .content-box::-webkit-scrollbar-thumb, .content-box-mcu::-webkit-scrollbar-thumb  {
-            background: #888; /* Color of the scrollbar thumb */
-            border-radius: 10px; /* Rounded thumb */
-        }
-
-        .content-box::-webkit-scrollbar-thumb:hover,.content-box-mcu::-webkit-scrollbar-thumb:hover {
-            background: #555; /* Color of the thumb on hover */
-        }
-
-
 
 article h3 {
   display: flex;
@@ -371,6 +350,14 @@ article h3 {
   justify-content: center;
 }
 
+@media screen and (max-width:478px) {
+  body{
+    margin-left: -50px;
+    margin-right: 0px;;
+  }
+}
+
+
 @media screen and (min-width: 436px) {
   #link1,
   #link0 {
@@ -386,7 +373,26 @@ article h3 {
   .tabletMenu {
     display: none;
   }
+
+  nav{
+    max-width: 436px;
+  }
+
 }
+
+@media screen and(min-width:900px) {
+  .footer{
+    max-width: 900px;
+    min-width: 200px;
+  }
+}
+
+@media screen and(max-width:568px) {
+  .footer{
+    max-width: 568px;
+  }
+}
+
 
 @media screen and (min-width: 567px) {
   .logo {
@@ -396,29 +402,62 @@ article h3 {
   .ironMan {
     margin-left: 400px;
   }
-  .comic-content {
-    flex-direction: row;
-    width: 100%;
-    overflow-x: scroll;
-  }
 
-  .content-box {
-    margin-right: 30%;
-    padding-right: 120px;
-  }
 
-  .content-box-mcu {
-    margin-right: 40px;
-    padding-right: 120px;
-  }
-
-  .MCUblock {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    overflow-x: scroll;
-  }
 }
+	 
+
+
+.article{
+  margin-left: 60px;
+  margin-right: 40px;
+  padding: 15px;
+  margin-bottom: 40px;
+  color: blue;
+  margin-top: 0;
+}
+
+.marvel{
+  text-align: center;
+}
+
+.card1:hover,.card2:hover{
+    transform: scale(1.05);      /* Scale up slightly on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card1{
+  text-align: center;
+  margin: auto;
+  width: 400px;
+  height: 225px;
+  background-size: cover;
+  background-image: url("assets/content/thunderbolts.jpeg");
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card2{
+  text-align: center;
+  margin: auto;
+  width: 400px;
+  height: 225px;
+  background-size: cover;
+  background-image: url("assets/content/supes.jpeg");
+}
+
+.card-text, .card2-text{
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+  padding: 10px;                /* Adjust padding for smaller size */
+  background: #003049;
+}
+
+.article h2{
+  text-align: center;
+}
+
 
 .about h1:first-of-type {
   margin-top: 150px;
