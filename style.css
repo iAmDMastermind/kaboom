@@ -12,7 +12,7 @@ body {
   background-color: #fdf0df;
   font-family: "Bangers", "bangers", monospace;
   color: #669bbc;
-  width: 93%;
+  width: 96%;
 
   scrollbar-arrow-color: #c1121f;
 }
@@ -350,12 +350,6 @@ article h3 {
   justify-content: center;
 }
 
-@media screen and (max-width:478px) {
-  body{
-    margin-left: -50px;
-    margin-right: 0px;;
-  }
-}
 
 
 @media screen and (min-width: 436px) {
@@ -594,6 +588,10 @@ article h3 {
   font-size: 39px;
 }
 
+.content-articles{
+  margin-left: 12px;
+}
+
 .content-articles h2{
   color: #4c7086;
   text-align: center;
@@ -624,4 +622,15 @@ article h3 {
   box-shadow: 3px 3px 5px #00000073;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width:488px) {
+  .card1 img,.card2 img, .card1, .card2{
+    width: 300px;
+  }
+
+  .footer{
+    /* right: -40px;
+    position: relative; */
+  }
 }
