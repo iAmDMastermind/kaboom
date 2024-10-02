@@ -95,6 +95,13 @@ nav {
   z-index: 1000;
 }
 
+@media screen and (max-width:400px) {
+  
+  nav{
+    max-width: 400px;
+  }
+}
+
 .menulink {
   display: flex;
   transition: 2s;
@@ -407,7 +414,7 @@ article h3 {
   margin-right: 40px;
   padding: 15px;
   margin-bottom: 40px;
-  color: blue;
+  color: #003049;
   margin-top: 0;
 }
 
@@ -415,19 +422,18 @@ article h3 {
   text-align: center;
 }
 
-.card1:hover,.card2:hover{
+.card1:hover,.card2:hover,.card3:hover,.card4:hover{
     transform: scale(1.05);      /* Scale up slightly on hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .card1{
   text-align: center;
-  margin: auto;
-  width: 400px;
+  max-width: 400px;
   height: 225px;
   background-size: cover;
   background-image: url("assets/content/thunderbolts.jpeg");
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -438,7 +444,38 @@ article h3 {
   height: 225px;
   background-size: cover;
   background-image: url("assets/content/supes.jpeg");
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card3{
+  text-align: center;
+
+  max-width: 400px;
+  height: 229px;
+  background-size: cover;
+  background-image: url("./articles/content/snap!.jpg");
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card4{
+  text-align: center;
+  max-width: 400px;
+  height: 229px;
+  background-size: cover;
+  background-image: url("./assets/content/FF.jpeg");
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media screen and (max-width:490px) {
+  .card1, .card2, .card3, .card4{
+    margin-left: -50px;
+    width: 250px;
+  }
+}
+
 
 .card-text, .card2-text{
   font-size: 20px;
@@ -608,30 +645,91 @@ article h3 {
   font-size: 24px;
 }
 
-.noShow{
-  background-color: #5c0202;
-  padding: 30px;
-  position: fixed;
-  margin-top: 100px;
-  margin-left: 50px;
-  top: 0;
-  text-align: center;
-  display: none;
-  border-radius: 60px;
-  transition: 1s;
-  box-shadow: 3px 3px 5px #00000073;
-  justify-content: center;
-  align-items: center;
-}
-
 @media screen and (max-width:488px) {
   .card1 img,.card2 img, .card1, .card2{
     width: 300px;
     margin-left: -60px;
   }
+}
 
-  .footer{
-    /* right: -40px;
-    position: relative; */
+/* Movie Review Section... */
+
+.movies, .movies2, .movies3, .movies4, .movies5, .movies6, 
+.movies7, .movies8{
+  margin-left: 15px;
+}
+
+.movies img, .movies2 img, .movies3 img, .movies4 img,
+.movies5 img, .movies6 img, .movies7 img{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movies img:hover, .movies2 img:hover, .movies3 img:hover, .movies4 img:hover,
+.movies5 img:hover, .movies7 img:hover, .movies6 img:hover{
+  transform: scale(1.05);      /* Scale up slightly on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, 
+  rgba(0,0,0,0), rgba(0,0,0,0.4));
+}
+
+.movies p, .movies2 p, .movies3 p, .movies4 p, .movies5 p, .movies6 p{
+  font-size: 12px;
+  color: gray;
+  position: relative;
+  top: -15px;
+  max-width: 400px;
+  min-width: 150px;
+}
+
+.movies2{
+  margin-left: 100px;
+}
+
+.movies4{
+  margin-left: 170px;
+}
+
+@media screen and (max-width: 500px) {
+  .movies, .movies2, .movies3, .movies4{
+    margin-left:0;
   }
 }
+
+.rating-vgood, .rating-vbad, .rating-ok{
+  background-color: #6e116e;
+  font-family: system-ui, -apple-system;
+  color: rgb(204, 226, 9);
+  padding: 8px;
+  width: 60px;
+  margin-top: -21px;
+  text-align: center;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+  50% 70%, 21% 91%, 32% 57%, 2% 35%, 35% 35%);
+  margin-bottom: 35px;
+}
+
+.rating-ok{
+  background-color: rgb(238, 238, 111);
+  color: #003049;
+}
+
+.rating-vbad{
+  background-color: #462523;
+  margin-top: 10px;
+  color: rgb(109, 109, 109);
+  font-family: system-ui, -apple-system;
+}
+
+.star{
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  max-width: 100px;
+  text-align: center;
+}
+
+.star:hover{
+  background-color: rgb(49, 48, 48);
+  transition: 0.7s;
+}
+
