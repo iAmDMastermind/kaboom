@@ -1,0 +1,55 @@
+body{
+    margin-top: 170px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.name{
+    position: absolute;
+    bottom: 0;
+    display: none;
+    padding: 13px;
+}
+
+.name p{
+    background-color: #780000;
+    color: rgb(189, 173, 86);
+}
+
+.card-inside:hover .name{
+    display: block;
+    color: #669bbc;
+}
+
+.card-wrappers{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-inside{
+    background-color: rgb(49, 49, 51);
+
+}
+
+.card-inside p{
+    padding: 13px;
+}
+
+.card-inside p:hover{
+    color: #669bbc;
+}
+
+.card-inside:hover{
+    background-color: rgb(235, 206, 206);
+    transition: 0.6s;
+    height: 380px;
+}
+
+.card-inside h3{
+    padding-left: 13px;
+}
