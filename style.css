@@ -25,57 +25,6 @@ a:visited {
   color: #669bbc;
 }
 
-/* Form Styles */
-.subscribe-form {
-  max-width: 700px;
-
-  margin: 0 auto;
-  text-align: center;
-}
-
-.subscribe-form input {
-  border: 1px solid #780000;
-  font-family: "Bangers", sans-serif;
-  border-radius: 30px;
-  border: 2px dotted #003049;
-  margin-top: 120px;
-  padding: 15px;
-  width: 90%;
-  color: #669bbc;
-  font-size: 18px;
-  margin-bottom: 15px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.subscribe-form input:hover {
-  transition: 0.6s;
-  color: #003049;
-  background-color: #fdf0d5;
-  padding: 20px;
-  border: 2px dotted #003049;
-}
-
-.subscribe-form button, form button{
-  background-color: #003049;
-  color: #fdf0d5;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 20px;
-  font-family: "Bangers", sans-serif;
-  font-size: 18px;
-  cursor: pointer;
-  margin-bottom: 25px;
-}
-
-
-
-.subscribe-form button:hover, form button:hover {
-  color: #003049;
-  background-color: #fdf0d5;
-  border: 2px dotted #003049;
-  transition: 0.6s;
-}
 
 /* Layout Styles */
 
@@ -184,10 +133,6 @@ nav img {
   color: #669bbc;
 }
 
-/* List Styles */
-/* ul {
-  list-style-type: none;
-} */
 
 .footer {
   background-color: #780000;
@@ -424,12 +369,13 @@ article h3 {
 
 .card1:hover,.card2:hover,.card3:hover,.card4:hover{
     transform: scale(1.05);      /* Scale up slightly on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(2, 2, 2, 0.87);
 }
 
 .card1{
   text-align: center;
   max-width: 400px;
+  margin: auto;
   height: 225px;
   background-size: cover;
   background-image: url("assets/content/thunderbolts.jpeg");
@@ -439,9 +385,9 @@ article h3 {
 
 .card2{
   text-align: center;
-  margin: auto;
   width: 400px;
   height: 225px;
+  margin: auto;
   background-size: cover;
   background-image: url("assets/content/supes.jpeg");
   margin-bottom: 20px;
@@ -450,7 +396,7 @@ article h3 {
 
 .card3{
   text-align: center;
-
+  margin: auto;
   max-width: 400px;
   height: 229px;
   background-size: cover;
@@ -461,6 +407,7 @@ article h3 {
 
 .card4{
   text-align: center;
+  margin: auto;
   max-width: 400px;
   height: 229px;
   background-size: cover;
@@ -471,8 +418,8 @@ article h3 {
 
 @media screen and (max-width:490px) {
   .card1, .card2, .card3, .card4{
-    margin-left: -50px;
-    width: 250px;
+    margin: 0;
+    /* width: 240px; */
   }
 }
 
@@ -654,25 +601,19 @@ article h3 {
 
 /* Movie Review Section... */
 
-.movies, .movies2, .movies3, .movies4, .movies5, .movies6, 
-.movies7, .movies8{
-  margin-left: 15px;
-}
 
-.movies img, .movies2 img, .movies3 img, .movies4 img,
-.movies5 img, .movies6 img, .movies7 img{
+#allMovies img{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.movies img:hover, .movies2 img:hover, .movies3 img:hover, .movies4 img:hover,
-.movies5 img:hover, .movies7 img:hover, .movies6 img:hover{
+ #allMovies img:hover{
   transform: scale(1.05);      /* Scale up slightly on hover */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   -webkit-box-reflect: below 0px linear-gradient(to bottom, 
   rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
 
-.movies p, .movies2 p, .movies3 p, .movies4 p, .movies5 p, .movies6 p{
+#allMovies p{
   font-size: 12px;
   color: gray;
   position: relative;
@@ -681,21 +622,18 @@ article h3 {
   min-width: 150px;
 }
 
-.movies2{
-  margin-left: 100px;
+.movies2, .movies4, .movies6{
+  margin-left: 190px;
 }
 
-.movies4{
-  margin-left: 170px;
-}
 
 @media screen and (max-width: 500px) {
-  .movies, .movies2, .movies3, .movies4{
+  #allMovies{
     margin-left:0;
   }
 }
 
-.rating-vgood, .rating-vbad, .rating-ok{
+.rating-vgood, .rating-good, .rating-ok, .rating-vbad, .rating-bad {
   background-color: #6e116e;
   font-family: system-ui, -apple-system;
   color: rgb(204, 226, 9);
@@ -705,7 +643,17 @@ article h3 {
   text-align: center;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
   50% 70%, 21% 91%, 32% 57%, 2% 35%, 35% 35%);
-  margin-bottom: 35px;
+  margin-bottom: 35px;  
+  font-family: system-ui, -apple-system;
+}
+
+.rating-good{
+  background-color: #07f763;
+  color: #156b19;
+}
+
+.rating-good:hover{
+  color: #669bbc;
 }
 
 .rating-ok{
@@ -717,7 +665,7 @@ article h3 {
   background-color: #462523;
   margin-top: 10px;
   color: rgb(109, 109, 109);
-  font-family: system-ui, -apple-system;
+
 }
 
 .star{

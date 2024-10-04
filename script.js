@@ -9,11 +9,11 @@ const theGOAT = document.getElementById("theGOAT");
 const GOAT = document.getElementById("GOAT");
 const x1 = document.getElementById("x1");
 const searchInput = document.querySelector(".search input");
-const searchResults = document.querySelectorAll(".content-box, .content-box-mcu");
+const searchResults = document.querySelectorAll(".marvel, .card1, .card2");
 const searchbutton = document.getElementsByClassName(".search-button")
 const boxes = document.getElementById("content-card")
 const noShow = document.getElementById("noShow")
-const card = document.getElementsByClassName("article")
+const card = document.getElementsByClassName(".marvel")
 
 // Create the search button
 const searchButton = document.createElement("button");
@@ -31,7 +31,6 @@ x2.addEventListener("click", closeGOAT);
 theGOAT.addEventListener("click", showGOAT);
 x1.addEventListener("click", closeSearch);
 searchButton.addEventListener("click", filterContent);
-boxes.addEventListener("click", content)
 card.addEventListener("click", content)
 
 function content() {

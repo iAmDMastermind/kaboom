@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-	
+
 	<meta name="description" content="Your one stop site for information and review for Marvel and DC movies 💥🧨">
-	<meta name="keywords" content="Marvel review, DC, Movies, Avengers, X-Men, Deadpool, Marvel News, DC News, Comic Book news, Movie review">
+	<meta name="keywords"
+		content="Marvel review, DC, Movies, Avengers, X-Men, Deadpool, Marvel News, DC News, Comic Book news, Movie review">
 	<meta name="author" content="Mololuwa Adenuga">
 
 	<link rel="shortcut icon" href="./assets/icon.png" type="x-icon">
@@ -26,7 +27,7 @@
 <body>
 
 	<nav>
-		<a href="./index.html"><img src="./assets/Kaboom!.png" width="80px"></a>
+		<a href="./"><img src="./assets/Kaboom!.png" width="80px"></a>
 		<div class="menulink">
 			<a href="#" id="link0"><img src="./assets/search.svg" width="30px"></a>
 			<a href="#" id="link1"><img src="./assets/menubar.svg"></a>
@@ -35,36 +36,27 @@
 		<div id="list" class="list">
 			<ul>
 				<li id="x">X</li>
-				<li><a href="./about.html">About Us</a></li>
-				<li><a href="./contact.html">Contact Us</a></li>
+				<li><a href="./about">About Us</a></li>
+				<li><a href="./contact">Contact Us</a></li>
 				<li><a href="#">Characters</a></li>
-				<li><a href="./review.html">Review</a></li>
-				
+				<li><a href="./review">Review</a></li>
+
 			</ul>
 		</div>
 
-		<div class="search" id="search">
-			<p id="x1">X</p> <br>
-			<input placeholder="SEARCH"> <br> <br>
-		</div>
-
 		<ul class="tabletMenu">
-			<a href="./index.html">
+			<a href="./index">
 				<li>Home</li>
 			</a>
-			<a href="./about.html">
+			<a href="./about">
 				<li>About Us</li<>
 			</a>
-			<a href="./contact.html">
+			<a href="./contact">
 				<li>Contact</li<>
 			</a>
 
-			<a style="color: gold;" href="./review.html">
+			<a style="color: gold;" href="./review">
 				<li>Reviews</li<>
-			</a>
-
-			<a href="#">
-				<li class="searchForTab" id="theGOAT">Search me</li>
 			</a>
 		</ul>
 
@@ -75,60 +67,60 @@
 
 		<h2>Our latest stuff:</h2>
 
-		<div class="movies">
+		<div class="movies" id="allMovies">
 			<img src="articles/content/deadpool&wolverine.jpg" alt="Deadpool & Wolverine poster">
 			<h3>Deadpool and Wolverine</h3>
 			<div>
-				<p>30th of August, 2024 14:00PM</p>
+				<p>30th of August, 2024 <span style="color: #0008e4; font-family:Arial">||</span> 14:00PM</p>
 				<p>Adventure, Rated R, Starring: Ryan Reynolds, Hugh Jackman.</p>
 				<p class="star">⭐⭐⭐⭐⭐</p>
 			</div>
-			
+
 			<div class="rating-vgood">
 				<h3>92</h3>
 			</div>
 		</div>
 
-		<div class="movies2">
+		<div class="movies2" id="allMovies">
 			<img src="articles/content/web.jpg" width="259" alt="Madame Web poster">
 			<h3>Madame Web</h3>
 			<div>
-				<p>18th of February, 2023 17:50PM</p>
-				<p>Drama, Adventure, Rated PG-13, Starring: 
-				   Dakota Johnson, Sydney Sweeney, Isabella Merced,
-				   Celeste O'Connor
+				<p>18th of February, 2023 <span style="color: #0008e4; font-family:Arial">||</span> 17:50PM</p>
+				<p>Drama, Adventure, Rated PG-13, Starring:
+					Dakota Johnson, Sydney Sweeney, Isabella Merced,
+					Celeste O'Connor
 				</p>
 				<p class="star">⭐⭐✨</p>
 			</div>
-			
+
 			<div class="rating-vbad">
 				<h3>56</h3>
 			</div>
 		</div>
 
-		<div class="movies3">
+		<div class="movies3" id="allMovies">
 			<img src="articles/content/the marvels.jpg" width="259" alt="The Marvels poster">
 			<h3>The Marvels</h3>
 			<div>
-				<p>7th of November, 2023 17:50PM</p>
-				<p>Action, Adventure, Science, Rated PG-13, Starring: 
-				   Brie Larson, Samuel L. Jackson,
-				   Tayonah Parris, Iman Vellani, Zawe Ashton
+				<p>7th of November, 2023 <span style="color: #0008e4; font-family:Arial">||</span> 17:50PM</p>
+				<p>Action, Adventure, Science, Rated PG-13, Starring:
+					Brie Larson, Samuel L. Jackson,
+					Tayonah Parris, Iman Vellani, Zawe Ashton
 				</p>
 				<p class="star">⭐⭐⭐✨</p>
 			</div>
-			
+
 			<div class="rating-ok">
 				<h3>73</h3>
 			</div>
 		</div>
 
-		<div class="movies4">
+		<div class="movies4" id="allMovies">
 			<img src="articles/content/nowayhome.jpg" alt="Spider-Man No Way Home poster" width="259">
 			<h3>Spider-Man: No Way Home</h3>
-			<p>18th of April, 2023 11:45 AM</p>
+			<p>18th of April, 2023 <span style="color: #0008e4; font-family:Arial">||</span> 11:45 AM</p>
 			<p>Action, Adventure, Science, Fiction, Rated PG, Starring:
-			   Tom Holland, Benedict Cumberbatch, Zendaya
+				Tom Holland, Benedict Cumberbatch, Zendaya
 			</p>
 			<p class="star">⭐⭐⭐⭐⭐</p>
 
@@ -136,11 +128,62 @@
 				<h3>94</h3>
 			</div>
 		</div>
+
+		<div class="movies5" id="allMovies">
+			<img src="articles/content/xmen.jpg" alt="X-Men 97' poster" width="259">
+			<h3>X-Men 97'</h3>
+			<p>
+				23rd of October, 2023
+				<span style="color: #0008e4; font-family:Arial">||</span> 9:08 PM
+			</p>
+			<p>Action, Animation, Science, Adventure, Rated PG, Starring: Scott Summers, Jean Grey, Charles
+				Xaxier.
+			</p>
+			<p class="star">⭐⭐⭐⭐⭐</p>
+			<div class="rating-vgood">
+				<h3>96</h3>
+			</div>
+		</div>
+
+		<div class="movies6" id="allMovies">
+			<img src="articles/content/shangchi.jpg" alt="Shang-Chi and the legend of the ten rings poster" width="259">
+			<h3>Shang-Chi and the legend of the ten rings</h3>
+			<p>11th of January, 2023 <span style="color: #0008e4; font-family:Arial">||</span>12:22AM</p> 
+			<p>Action, Adventure, Fiction, Fantasy, Rated PG 13</p>
+			<p class="star">⭐⭐⭐⭐✨</p>
+			<div class="rating-good">
+				<h3>78</h3>
+			</div>
+		</div>
+
+		div.movies7
 	</section>
 
-	<!-- vgood 80>
+
+
+	<!-- vgood 80> 		
 		good 75-80
-		ok65-75
+		ok65-74
 		bad65-60
 		vbad60< 	
 	-->
+
+	<div class="footer">
+		<a href="./index.html"><img src="./assets/Kaboom!.png" width="80px"></a>
+
+		<p class="copyrights">Made by Mastermind, 2024 &copy; All rights reserved </p>
+		<div class="socialMedias">
+			<a href="https://x.com/NugaMoses" target="_blank"><img src="./assets/twitter.svg" width="20px"></a>
+			<a href="https://facebook.com/profile.php?id=100089290991468" target="_blank"><img src="./assets/facebook.svg"
+					width="13px"></a>
+			<a href="#"><img src="./assets/instagram.svg" width="20px"></a>
+			<a href="https:wa.me/qr/XK2GPGG5SIANL1" target="_blank"><img src="./assets/whatsapp.svg" width="20px"></a>
+		</div>
+	</div>
+
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
